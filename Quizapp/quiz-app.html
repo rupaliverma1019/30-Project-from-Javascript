@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* position: relative; */
+        }
+        
+        .quiz-container {
+            min-height: 40%;
+            min-width: 35%;
+            /* border: 1px solid black; */
+            /* padding: 15px; */
+            position: relative;
+            padding: 50px 150px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0 0 20px goldenrod;
+        }
+        
+        #quiz-question {
+            font-size: 2rem;
+            /* padding: 20px; */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-left: 30px;
+        }
+        
+        li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        #submit {
+            background-color: darkorange;
+            border: none;
+            color: aliceblue;
+            font-size: 1.2rem;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        #submit:hover {
+            cursor: pointer;
+            background-color: lightsalmon;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1 id="quiz-question">Question tag</h1>
+        <ul>
+            <li>
+                <input type="radio" class="answer" id="option-a" name="quiz-option">
+                <label for="option-a" id="text_option_a">Option A</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" id="option-b" name="quiz-option">
+                <label for="option-b" id="text_option_b">Option B</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" id="option-c" name="quiz-option">
+                <label for="option-c" id="text_option_c">Option C</label>
+            </li>
+            <li>
+                <input type="radio" class="answer" id="option-d" name="quiz-option">
+                <label for="option-d" id="text_option_d">Option D</label>
+            </li>
+        </ul>
+        <button type="submit" id="submit">Submit</button>
+    </div>
+</body>
+<script src="quiz-app.js"></script>
+
+</html>
